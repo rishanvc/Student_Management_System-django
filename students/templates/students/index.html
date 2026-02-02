@@ -2,6 +2,15 @@
 
 {% block body %}
 <h3 class="m-4">All Students</h3>
+<form method="GET" action="{% url 'search' %}" class="ms-4 me-4 mb-3">
+  <input
+    type="text"
+    name="name"
+    class="form-control"
+    placeholder="Search by first name"
+  >
+</form>
+
       <div class="row">
         <div class="col-12">
           {% if students %}

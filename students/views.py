@@ -69,3 +69,11 @@ def delete(request,id):
         student=Student.objects.get(pk=id)
         student.delete()
     return HttpResponseRedirect(reverse('index'))
+
+
+def search(request):
+    name = request.GET.get('name')
+    students = Student.objects.filter(first_name__icontains=name)
+    return render(request, 'students/index.html', {
+        'students': students
+    })
