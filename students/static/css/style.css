@@ -1,0 +1,17 @@
+.custom-navbar {
+    background-color: #14ad98;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.custom-btn {
+    background-color: #14ad98 !important;
+    color: white !important;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #14ad98 !important;
+}

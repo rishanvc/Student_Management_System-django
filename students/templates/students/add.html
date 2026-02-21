@@ -16,7 +16,7 @@
         <form action="{% url 'add' %}" method="POST">
           {% csrf_token %} {{ form.as_p }}
           <div class="d-flex justify-content-center gap-2 mt-3">
-            <button type="submit" class="btn btn-primary">ADD</button>
+            <button type="submit" class="btn custom-btn">ADD</button>
             <a href="{% url 'index' %}" class="btn btn-secondary">CANCEL</a>
           </div>
         </form>
